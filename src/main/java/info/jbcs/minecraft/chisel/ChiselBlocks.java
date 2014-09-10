@@ -71,6 +71,13 @@ public class ChiselBlocks
 
     public static BlockSpikes blockSpiketrap;
 
+    public static BlockCarvable blockRoofRed;
+    public static BlockCarvable blockRoofBlue;
+    public static BlockCarvable blockRoofBrown;
+    public static BlockCarvable blockRoofOrange;
+    public static BlockCarvable blockRoofGreen;
+    public static BlockCarvable blockRoofBlack;
+    
     // 1.7
     public static BlockCarvableGlass[] blockStainedGlass = new BlockCarvableGlass[4];
     public static BlockCarvablePane[] blockStainedGlassPane = new BlockCarvablePane[8];
@@ -1249,6 +1256,63 @@ public class ChiselBlocks
             blockLaboratory.carverHelper.register(blockLaboratory, "blockLaboratory");
         }
 
+        if(Configurations.featureEnabled("stainedClay")){
+        	
+        	blockRoofRed= (BlockCarvable) new BlockCarvable(Material.rock).setHardness(1F).setStepSound(Block.soundTypeStone);
+            Carving.chisel.addVariation("roofRed", Blocks.stained_hardened_clay, 14, 0);
+            blockRoofRed.carverHelper.addVariation(StatCollector.translateToLocal("chisel.tile.roofRed.1.desc"), 1, "stainedclay/roof_red_1");
+            blockRoofRed.carverHelper.addVariation(StatCollector.translateToLocal("chisel.tile.roofRed.2.desc"), 2, "stainedclay/roof_red_2");
+            blockRoofRed.carverHelper.addVariation(StatCollector.translateToLocal("chisel.tile.roofRed.3.desc"), 3, "stainedclay/roof_red_3");
+            blockRoofRed.carverHelper.addVariation(StatCollector.translateToLocal("chisel.tile.roofRed.4.desc"), 4, "stainedclay/roof_red_4");
+            blockRoofRed.carverHelper.register(blockRoofRed, "roofRed");
+            Carving.chisel.registerOre("roofRed", "blockRoofRed");
+            
+        	blockRoofBlue= (BlockCarvable) new BlockCarvable(Material.rock).setHardness(1F).setStepSound(Block.soundTypeStone);
+            Carving.chisel.addVariation("roofBlue", Blocks.stained_hardened_clay, 11, 0);
+            blockRoofBlue.carverHelper.addVariation(StatCollector.translateToLocal("chisel.tile.roofBlue.1.desc"), 1, "stainedclay/roof_blue_1");
+            blockRoofBlue.carverHelper.addVariation(StatCollector.translateToLocal("chisel.tile.roofBlue.2.desc"), 2, "stainedclay/roof_blue_2");
+            blockRoofBlue.carverHelper.addVariation(StatCollector.translateToLocal("chisel.tile.roofBlue.3.desc"), 3, "stainedclay/roof_blue_3");
+            blockRoofBlue.carverHelper.addVariation(StatCollector.translateToLocal("chisel.tile.roofBlue.4.desc"), 4, "stainedclay/roof_blue_4");
+            blockRoofBlue.carverHelper.register(blockRoofBlue, "roofBlue");
+            Carving.chisel.registerOre("roofBlue", "blockRoofBlue");
+            
+        	blockRoofBrown= (BlockCarvable) new BlockCarvable(Material.rock).setHardness(1F).setStepSound(Block.soundTypeStone);
+            Carving.chisel.addVariation("roofBrown", Blocks.stained_hardened_clay, 12, 0);
+            blockRoofBrown.carverHelper.addVariation(StatCollector.translateToLocal("chisel.tile.roofBrown.1.desc"), 1, "stainedclay/roof_brown_1");
+            blockRoofBrown.carverHelper.addVariation(StatCollector.translateToLocal("chisel.tile.roofBrown.2.desc"), 2, "stainedclay/roof_brown_2");
+            blockRoofBrown.carverHelper.addVariation(StatCollector.translateToLocal("chisel.tile.roofBrown.3.desc"), 3, "stainedclay/roof_brown_3");
+            blockRoofBrown.carverHelper.addVariation(StatCollector.translateToLocal("chisel.tile.roofBrown.4.desc"), 4, "stainedclay/roof_brown_4");
+            blockRoofBrown.carverHelper.register(blockRoofBrown, "roofBrown");
+            Carving.chisel.registerOre("roofBrown", "blockRoofBrown");
+        	
+            blockRoofOrange= (BlockCarvable) new BlockCarvable(Material.rock).setHardness(1F).setStepSound(Block.soundTypeStone);
+            Carving.chisel.addVariation("roofOrange", Blocks.stained_hardened_clay, 1, 0);
+            blockRoofOrange.carverHelper.addVariation(StatCollector.translateToLocal("chisel.tile.roofOrange.1.desc"), 1, "stainedclay/roof_copper_1");
+            blockRoofOrange.carverHelper.addVariation(StatCollector.translateToLocal("chisel.tile.roofOrange.2.desc"), 2, "stainedclay/roof_copper_2");
+            blockRoofOrange.carverHelper.addVariation(StatCollector.translateToLocal("chisel.tile.roofOrange.3.desc"), 3, "stainedclay/roof_copper_3");
+            blockRoofOrange.carverHelper.addVariation(StatCollector.translateToLocal("chisel.tile.roofOrange.4.desc"), 4, "stainedclay/roof_copper_4");
+            blockRoofOrange.carverHelper.register(blockRoofOrange, "roofOrange");
+            Carving.chisel.registerOre("roofOrange", "blockRoofOrange");
+            
+        	blockRoofGreen= (BlockCarvable) new BlockCarvable(Material.rock).setHardness(1F).setStepSound(Block.soundTypeStone);
+            Carving.chisel.addVariation("roofGreen", Blocks.stained_hardened_clay, 13, 0);
+            blockRoofGreen.carverHelper.addVariation(StatCollector.translateToLocal("chisel.tile.roofGreen.1.desc"), 1, "stainedclay/roof_green_1");
+            blockRoofGreen.carverHelper.addVariation(StatCollector.translateToLocal("chisel.tile.roofGreen.2.desc"), 2, "stainedclay/roof_green_2");
+            blockRoofGreen.carverHelper.addVariation(StatCollector.translateToLocal("chisel.tile.roofGreen.3.desc"), 3, "stainedclay/roof_green_3");
+            blockRoofGreen.carverHelper.addVariation(StatCollector.translateToLocal("chisel.tile.roofGreen.4.desc"), 4, "stainedclay/roof_green_4");
+            blockRoofGreen.carverHelper.register(blockRoofGreen, "roofGreen");
+            Carving.chisel.registerOre("roofGreen", "blockRoofGreen");
+        	
+            blockRoofBlack= (BlockCarvable) new BlockCarvable(Material.rock).setHardness(1F).setStepSound(Block.soundTypeStone);
+            Carving.chisel.addVariation("roofBlack", Blocks.stained_hardened_clay, 15, 0);
+            blockRoofBlack.carverHelper.addVariation(StatCollector.translateToLocal("chisel.tile.roofBlack.1.desc"), 1, "stainedclay/roof_black_1");
+            blockRoofBlack.carverHelper.addVariation(StatCollector.translateToLocal("chisel.tile.roofBlack.2.desc"), 2, "stainedclay/roof_black_2");
+            blockRoofBlack.carverHelper.addVariation(StatCollector.translateToLocal("chisel.tile.roofBlack.3.desc"), 3, "stainedclay/roof_black_3");
+            blockRoofBlack.carverHelper.addVariation(StatCollector.translateToLocal("chisel.tile.roofBlack.4.desc"), 4, "stainedclay/roof_black_4");
+            blockRoofBlack.carverHelper.register(blockRoofBlack, "roofBlack");
+            Carving.chisel.registerOre("roofBlack", "blockRoofBlack");   
+        }        
+        
         Blocks.stone.setHarvestLevel("chisel", 0, 0);
     }
 

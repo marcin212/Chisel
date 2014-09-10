@@ -720,5 +720,37 @@ chisel.tile.blockLaboratory.13.desc=Direction Console (Right)
 chisel.tile.blockLaboratory.14.desc=Direction Console (Left)
 chisel.tile.blockLaboratory.15.desc=Information Console
 
+#Stained Clay
+chisel.tile.roofRed.name=Roof Tile
+chisel.tile.roofRed.1.desc=Red Roof 1
+chisel.tile.roofRed.2.desc=Red Roof 2
+chisel.tile.roofRed.3.desc=Red Roof 3
+chisel.tile.roofRed.4.desc=Red Roof 4
+chisel.tile.roofBlue.name=Roof
+chisel.tile.roofBlue.1.desc=Blue Roof 1
+chisel.tile.roofBlue.2.desc=Blue Roof 2
+chisel.tile.roofBlue.3.desc=Blue Roof 3
+chisel.tile.roofBlue.4.desc=Blue Roof 4
+chisel.tile.roofBrown.name=Roof Tile
+chisel.tile.roofBrown.1.desc=Brown Roof 1
+chisel.tile.roofBrown.2.desc=Brown Roof 2
+chisel.tile.roofBrown.3.desc=Brown Roof 3
+chisel.tile.roofBrown.4.desc=Brown Roof 4
+chisel.tile.roofOrange.name=Roof Tile
+chisel.tile.roofOrange.1.desc=Orange Roof 1
+chisel.tile.roofOrange.2.desc=Orange Roof 2
+chisel.tile.roofOrange.3.desc=Orange Roof 3
+chisel.tile.roofOrange.4.desc=Orange Roof 4
+chisel.tile.roofGreen.name=Roof Tile
+chisel.tile.roofGreen.1.desc=Green Roof 1
+chisel.tile.roofGreen.2.desc=Green Roof 2
+chisel.tile.roofGreen.3.desc=Green Roof 3
+chisel.tile.roofGreen.4.desc=Green Roof 4
+chisel.tile.roofBlack.name=Roof Tile
+chisel.tile.roofBlack.1.desc=Black Roof 1
+chisel.tile.roofBlack.2.desc=Black Roof 2
+chisel.tile.roofBlack.3.desc=Black Roof 3
+chisel.tile.roofBlack.4.desc=Black Roof 4
+
 # Creative Tab localizations
 itemGroup.tabChisel=Chisel Blocks
